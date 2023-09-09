@@ -1,0 +1,8 @@
+langchain
+streamlit
+faiss-cpu
+openai
+tiktoken
+lida
+pypdf
+pycryptodome
