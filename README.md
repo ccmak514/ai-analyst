@@ -7,7 +7,10 @@ This application consists of two main functions:
 **2. Chat with your PDF**
 
 ## 1. EDA by Automatic Visualization
-![ezgif com-video-to-gif](https://github.com/ccmak514/ai-analyst/assets/101066418/68a40a5b-cdf3-4cef-8437-6e4ead6b5179)
+![ezgif com-video-to-gif (1)](https://github.com/ccmak514/ai-analyst/assets/101066418/f22ff9ed-cfd2-49a4-987a-6c10af221d63)
+
+![ezgif com-video-to-gif](https://github.com/ccmak514/ai-analyst/assets/101066418/a404434d-198b-49be-a4de-44eb95c0b8ec)
+
 
 ## 2. Chat with your PDF
 
