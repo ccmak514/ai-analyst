@@ -6,9 +6,8 @@ import tempfile
 import os
 
 # API Key
-import constant
-openai_api_key = constant.APIKEY
-
+# import constant
+# openai_api_key = constant.APIKEY
 st.title("AI Analyst: EDA by Automatic Visualization")
 
 if 'temp_csv' not in st.session_state:
@@ -16,25 +15,36 @@ if 'temp_csv' not in st.session_state:
 
 # Introduction
 st.markdown('''
-#### Introduction:
-- Upload a csv file, preview and summary (numerical and categorical) are displayed.
-- Click the button, exploratory data analysis(EDA) by visualization will be donw by AI.
-- The reasons and goals behind the visualization will be displayed.
-- The code for plotting the chart can be found in the code tab.
-- You may choose the number of visualization you want by using the slider.
+# Introduction:
+Welcome to the **:red[AI Analyst: EDA by Automatic Visualization]**. The AI can help you do the **:red[Exploratory Data Analysis (EDA) automatically]** by following the guidelines below:
+
+1. Upload a CSV file to preview and display a summary (numerical and categorical).
+2. Choose the number of visualizations you want.
+3. Click the button to do **:red[EDA through visualization]** by AI automatically.
+4. The **:red[reasons]** and **:red[goals]** behind the visualizations will be displayed.
+5. The **:red[code]** for plotting the charts can be found in the **:red[code tab]**.
 ''')
 
 st.divider()
 
 with st.sidebar:
-    st.title("Upload a CSV File")
-    csv_file = st.file_uploader(" ", type=["csv"])
     st.markdown('''
-    ## About the author
-    This app is written by **Isaac Mak**
+    # About the AI Analyst:
+    The objective of this app is to provide assistance in **analyzing CSV data and answering questions according to the provided PDF file.** 
+    This application consists of two main functions:
+
+    **1. EDA by Automatic Visualization**
+    
+    **2. Chat with your PDF**
+
+    AI Analyst is written by **Isaac Mak**. 
     - [LinkedIn](https://www.linkedin.com/in/isaac-ccmak/)
+    - [Source Code](https://github.com/ccmak514/ai-analyst)
     - [GitHub](https://github.com/ccmak514)
     ''')
+    openai_api_key = st.text_input("OpenAI API Key", type="password")
+    st.title("Upload a CSV File")
+    csv_file = st.file_uploader(" ", type=["csv"])
 
 
 def main():

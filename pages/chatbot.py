@@ -16,8 +16,8 @@ from langchain.chains import ConversationalRetrievalChain
 
 
 # API Key
-import constant
-openai_api_key = constant.APIKEY
+# import constant
+# openai_api_key = constant.APIKEY
 
 #################################################################################
 
@@ -26,9 +26,13 @@ st.title("AI Analyst: Chat with your PDF")
 # Introduction
 st.markdown('''
 #### Introduction:
-- Upload a pdf file.
-- After loading, you can ask any question about the pdf file.
-- The AI will answer you based on the provided pdf.
+Welcome to the **:red[AI Analyst: Chat with your PDF]**. The AI can help 
+answer your questions **:red[based on the provided PDF file]** by following the guidelines below:
+
+1. Upload a PDF file.
+2. Ask any question about the PDF file after loading.
+3. Answer **:red[based on the PDF file]** will be displayed.
+4. The answers will depend on the **:red[previous chat history.]**
 ''')
 st.divider()
 
@@ -40,14 +44,23 @@ for message in st.session_state.messages:
         st.markdown(message["content"])
 
 with st.sidebar:
-    st.title("Upload a PDF File")
-    pdf_file = st.file_uploader(" ")
     st.markdown('''
-    ## About
-    This app is written by **Isaac Mak**
+    # About the AI Analyst:
+    The objective of this app is to provide assistance in **analyzing CSV data and answering questions according to the provided PDF file.** 
+    This application consists of two main functions:
+
+    **1. EDA by Automatic Visualization**
+    
+    **2. Chat with your PDF**
+
+    AI Analyst is written by **Isaac Mak**. 
     - [LinkedIn](https://www.linkedin.com/in/isaac-ccmak/)
+    - [Source Code](https://github.com/ccmak514/ai-analyst)
     - [GitHub](https://github.com/ccmak514)
     ''')
+    openai_api_key = st.text_input("OpenAI API Key", type="password")
+    st.title("Upload a PDF File")
+    pdf_file = st.file_uploader(" ", type=['pdf'])
 
 #################################################################################
 
