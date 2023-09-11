@@ -6,6 +6,9 @@ This application consists of two main functions:
 
 **2. Chat with your PDF**
 
+Let try it by clicking this link:
+https://isaac-mak-ai-ana-lyst.streamlit.app/
+
 ## 1. EDA by Automatic Visualization
 ![ezgif com-video-to-gif (1)](https://github.com/ccmak514/ai-analyst/assets/101066418/f22ff9ed-cfd2-49a4-987a-6c10af221d63)
 
@@ -20,5 +23,3 @@ This application consists of two main functions:
 3. `pip3 install -r requirements.txt` - install the packages into the virtual environment
 4. `streamlit run visualization.py`
 
-## OpenAI API Key
-Please enter the OpenAI API Key  in the `constants.py`
