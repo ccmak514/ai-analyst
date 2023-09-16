@@ -19,9 +19,9 @@ st.markdown('''
 Welcome to the **:red[AI Analyst: EDA by Automatic Visualization]**. The AI can help you do the **:red[Exploratory Data Analysis (EDA) automatically]** by following the guidelines below:
 
 1. Upload a CSV file to preview and display a summary (numerical and categorical).
-2. Choose the number of visualizations you want.
+2. Choose the number of charts you want.
 3. Click the button to do **:red[EDA through visualization]** by AI automatically.
-4. The **:red[reasons]** and **:red[goals]** behind the visualizations will be displayed.
+4. The **:red[reasons]** and **:red[goals]** behind the visualization will be displayed.
 5. The **:red[code]** for plotting the charts can be found in the **:red[code tab]**.
 ''')
 
@@ -66,7 +66,7 @@ def main():
         # st.write(temp_file_path)
 
     ############# EDA #############
-    num_chart = st.slider('Number of Visualization', 1, 10)
+    num_chart = st.slider('Number of Charts', 1, 10)
     if st.button("Automatic Visualization"):
 
         lida = Manager(text_gen=llm("openai", api_key=openai_api_key))
