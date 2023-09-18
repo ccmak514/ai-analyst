@@ -46,12 +46,12 @@ for message in st.session_state.messages:
 with st.sidebar:
     st.markdown('''
     # About the AI Analyst:
-    The objective of this app is to provide assistance in **analyzing CSV data and answering questions according to the provided PDF file.** 
+    The objective of this app is to provide assistance in **answering questions according to the provided PDF file and analyzing CSV data.** 
     This application consists of two main functions:
 
-    **1. EDA by Automatic Visualization**
+    **1. Chat with your PDF**
     
-    **2. Chat with your PDF**
+    **2. EDA by Automatic Visualization**
 
     AI Analyst is written by **Isaac Mak**. 
     - [LinkedIn](https://www.linkedin.com/in/isaac-ccmak/)
