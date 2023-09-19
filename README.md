@@ -1,12 +1,17 @@
-# AI Analyst by Isaac MAK
-The objective of this project is to assist analysts in analyzing CSV data and answering questions according to the uploaded PDF file. 
+# AI Analyst
+AI Analyst is written by **Isaac Mak**
+- [LinkedIn](https://www.linkedin.com/in/isaac-ccmak/)
+- [Source Code](https://github.com/ccmak514/ai-analyst)
+- [GitHub](https://github.com/ccmak514)
+
+The objective of this project is to assist analysts in answering questions according to the uploaded PDF file and analyzing CSV data.
 This application consists of two main functions:
 
-**1. EDA by Automatic Visualization**
+**1. Chat with your PDF**
 
-**2. Chat with your PDF**
+**2. EDA by Automatic Visualization**
 
-Let's try it by clicking this link:
+Try the Demo:
 https://isaac-mak-ai-ana-lyst.streamlit.app/
 
 ## 1. Chat with your PDF
@@ -17,7 +22,9 @@ https://isaac-mak-ai-ana-lyst.streamlit.app/
 
 ## 2. EDA by Automatic Visualization
 
-![visualization](https://github.com/ccmak514/ai-analyst/assets/101066418/8cc2d14d-f751-4168-932b-27f4fd25007f)
+![visualization_gif1](https://github.com/ccmak514/ai-analyst/assets/101066418/34a7a679-7320-4ee1-8087-d3a65f1e395c)
+
+![visualization_gif2](https://github.com/ccmak514/ai-analyst/assets/101066418/49d78e2a-ad84-4482-870b-96d24da56e80)
 
 ## Setup
 1. `python3 -m venv ./venv/ai_analyst/` - Create a virtual environment
