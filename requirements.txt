@@ -6,3 +6,4 @@ tiktoken
 lida
 pypdf
 pycryptodome
+langchain-community
